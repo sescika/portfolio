@@ -1,0 +1,407 @@
+@import "variables";
+@import "style";
+@media screen and (max-width: 1025px){
+    header {
+        .centerBlock {
+            width: 95%;
+            #logo {
+                h1 {
+                    a {
+                        font-size: 40px;
+                    }
+                }
+            }
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #skills {
+        .headTitle {
+            h2 {
+                font-size: 36px;
+            }
+        }
+        .centerBlock {
+            width: 90%;
+        }
+    }
+    #about {
+        .centerBlock {
+            width: 90%;
+        }
+    }
+    #projects {
+        .headTitle {
+            h2 {
+                font-size: 36px;
+            }
+        }
+        .centerBlock {
+            width: 90%;
+            .projectHolder {
+                padding: 30px 0px;
+                display: block;
+                .project {
+                    margin: 0px;
+                    margin-bottom: 30px;
+                    &:nth-child(1) {
+                        margin-right: 0px;
+                    }
+                    &:nth-child(2)
+                    {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+    #contact {
+        .headTitle {
+            h2 {
+                font-size: 36px;
+            }
+        }
+        .centerBlock {
+            width: 90%; 
+            .contactHolder {
+                .contactTypes {
+                    .cType {
+                        margin-bottom: 7em;
+                        h3 {
+                            font-size: 24px;
+                        }
+                        p {
+                            font-size: 18px;
+                            margin-left: 2em;   
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    #bttBtn {
+        display: none;
+    }
+    footer {
+        .centerBlock {
+            width: 90%;
+        }
+    }
+}
+@media screen and (max-width: 769px){   
+    header {
+        display: block;
+        .centerBlock {
+            flex-direction: column;
+            #logo {
+                h1 {
+                    @include btmBorder(1px, $maroon);
+                    text-align: center;     
+                }
+            }
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #cover {
+        height: 600px;
+        #coverQuote {
+            blockquote {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+    #about {
+        .headTitle {
+            h2 {
+                font-size: 34px;
+            }
+        }
+        .centerBlock {
+            #info {
+                padding: 30px 0px;
+                .imgHolder {
+                    figure{
+                        img {
+                            width: 80%;
+                            height: 80%;
+                        }
+                        figcaption {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .textHolder {
+                    text-align: right;
+                    h3 {
+                        font-size: 24px;    
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+      
+    }
+    #skills {
+        .headTitle {
+            h2 {
+                font-size: 34px;
+            }
+        }
+        .centerBlock {
+            #currentSkills {
+                padding: 30px 0px;
+                display: block;
+                .skill {
+                 margin-bottom: 30px;
+                    .imgHolder {
+                        i {
+                            font-size: 60px;
+                        }
+                    }
+                    .progress {
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+    #projects {
+        .headTitle {
+            h2 {
+                font-size: 34px;
+            }
+        }
+    }
+    #contact {
+        .headTitle {
+            h2 {
+                font-size: 36px;
+            }
+        }
+        .centerBlock {
+            width: 90%; 
+            .contactHolder {
+                .contactTypes {
+                    .cType {
+                        margin-bottom: 5em;
+                        h3 {
+                            font-size: 20px;
+                        }
+                        p {
+                            font-size: 16px;
+                            margin-left: 2em;   
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .centerBlock {
+            h3 {
+                font-size: 20px;
+            }
+            .links {
+                a {
+                    i {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 601px){
+    header {
+        padding: 10px;
+        .centerBlock {
+            width: 100%;
+            #logo {
+                background-color: $darkerGrey;
+                h1 {
+                    padding: 10px;
+                    border-bottom: 0px;
+                    a {
+                        font-size: 30px;
+                      
+                    }
+                }
+            }
+            nav {
+                ul {
+
+                    display: block;
+                    li {
+                        margin: 0px;
+                        background-color: $lightGrey; 
+                        padding: 15px 0px;
+                        @include btmBorder(1px, $maroon);
+                        text-align: center;
+                        a {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #cover {
+        height: 400px;
+    }
+    #about {
+        .headTitle {
+            h2 {
+                font-size: 28px;
+            }
+            .line {
+                display: block;
+            }
+        }
+        .centerBlock {
+            #info {
+                display: block;
+                .imgHolder {
+                    width: 100%;
+                    margin-right: 0px;
+                    margin-bottom: 15px;
+                    text-align: center;
+                    figure {
+                        img {
+                            width: 50%;
+                            height: 50%;
+                        }
+                        figcaption {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .textHolder {
+                    width: 100%;
+                    text-align: center;
+                    h3 {
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        font-size: 14px;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }     
+    }
+    #skills {
+        .headTitle {
+            h2 {
+                font-size: 28px;
+            }
+            .line {
+                display: block;
+            }
+        }
+        .centerBlock {
+                #currentSkills {
+                    padding: 20px 0px;
+                    display: block;
+                    .skill {
+                        margin-bottom: 2em;
+                            .progress {
+                                height: 10px;
+                            }
+                    }
+                }
+        }
+    }
+    #projects {
+        .headTitle {
+            h2 {
+                font-size: 28px;
+            }
+        }
+        .centerBlock {
+            .projectHolder {
+                padding: 10px 0px;
+                .project {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    #contact {
+        .headTitle {
+            h2 {
+                font-size: 28px;
+            }
+        }
+        .centerBlock {
+            width: 90%; 
+            .contactHolder {
+                display: block;
+                .contactTypes {
+                    .cType {
+                        display: none;
+                    }
+                }
+                .contactForm {
+                    width: 100%;
+                    form {
+                        .pack {
+                            label, input[type="text"], input[type="email"] {
+                                font-size: 16px;
+                                text-align: left;
+                            }
+                        }
+                        textarea {
+                            font-size: 16px;
+                        }
+                        .submit {
+                            input[type="submit"] {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .centerBlock {
+            display: block;
+            text-align: center;
+            h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                @include btmBorder(1px, $maroon);
+            }
+            .links {
+                a {
+                    i {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
